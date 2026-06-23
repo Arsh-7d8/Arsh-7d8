@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="250" viewBox="0 0 800 250">
+  <style>
+    .terminal-bg { fill: #0d1117; stroke: #30363d; stroke-width: 1.5; rx: 8px; }
+    .title-bar { fill: #161b22; rx: 8px; }
+    .dot-red { fill: #ff5f56; }
+    .dot-yellow { fill: #ffbd2e; }
+    .dot-green { fill: #27c93f; }
+    .text-title { fill: #8b949e; font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace; font-size: 13px; }
+    .text-body { font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace; font-size: 14px; }
+    .prompt { fill: #58a6ff; font-weight: bold; }
+    .cmd { fill: #c9d1d9; }
+    .label { fill: #ff7b72; font-weight: bold; }
+    .value { fill: #c9d1d9; }
+    .accent { fill: #79c0ff; }
+    .success { fill: #56d364; }
+    .cursor { fill: #58a6ff; animation: blink 1.2s step-end infinite; }
+    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+  </style>
+
+  <!-- Terminal Window Background -->
+  <rect class="terminal-bg" width="800" height="250" />
+  
+  <!-- Title Bar (top section clipped by border rx) -->
+  <path class="title-bar" d="M1.5,8 C1.5,4.4 4.4,1.5 8,1.5 L792,1.5 C795.6,1.5 798.5,4.4 798.5,8 L798.5,40 L1.5,40 Z" />
+
+  <!-- macOS Window Dots -->
+  <circle class="dot-red" cx="25" cy="20" r="6" />
+  <circle class="dot-yellow" cx="45" cy="20" r="6" />
+  <circle class="dot-green" cx="65" cy="20" r="6" />
+
+  <!-- Terminal Title -->
+  <text class="text-title" x="400" y="24" text-anchor="middle">arshdeep@github:~</text>
+
+  <!-- Terminal Body Content -->
+  <g class="text-body" transform="translate(30, 75)">
+    <!-- Command Line -->
+    <text x="0" y="0">
+      <tspan class="prompt">arshdeep@github:~ $</tspan>
+      <tspan class="cmd"> neofetch --builder</tspan>
+    </text>
+
+    <!-- Logo / Graphic on the Left -->
+    <g transform="translate(0, 20)">
+      <text x="0" y="20" class="accent">  /\_/\\</text>
+      <text x="0" y="40" class="accent"> ( o.o )</text>
+      <text x="0" y="60" class="accent">  &gt; ^ &lt;</text>
+      <text x="0" y="80" class="accent"> /     \\</text>
+      <text x="0" y="100" class="accent">(_/   \\_)</text>
+    </g>
+
+    <!-- Info on the Right -->
+    <g transform="translate(140, 20)">
+      <text x="0" y="20"><tspan class="label">OS</tspan>: <tspan class="value">Human OS v2.0 (x86_64)</tspan></text>
+      <text x="0" y="40"><tspan class="label">Role</tspan>: <tspan class="value">AI Orchestrator &amp; Prototype Builder</tspan></text>
+      <text x="0" y="60"><tspan class="label">Stack</tspan>: <tspan class="value">Cursor / v0 / ChatGPT / Python / JS</tspan></text>
+      <text x="0" y="80"><tspan class="label">Passion</tspan>: <tspan class="value">Orchestrating agents to ship ideas</tspan></text>
+      <text x="0" y="100"><tspan class="label">Status</tspan>: <tspan class="success">🟢 active_learning_loop</tspan></text>
+    </g>
+
+    <!-- Bouncing Cursor line at the bottom -->
+    <text x="0" y="145">
+      <tspan class="prompt">arshdeep@github:~ $</tspan>
+      <tspan class="cmd"> </tspan>
+    </text>
+    <rect class="cursor" x="160" y="132" width="8" height="15" />
+  </g>
+</svg>
