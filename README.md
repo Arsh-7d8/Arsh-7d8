@@ -20,6 +20,16 @@
 
 ---
 
+### $ ls -la projects/
+
+```bash
+total 2
+-rw-r--r--  1 arshdeep  staff  124 Jun 23 12:00 bmw-showcase -> A motorsport showcase with an interactive 3D WebGL Configurator (Next.js + R3F + GSAP).
+-rw-r--r--  1 arshdeep  staff  118 Jun 23 12:00 beyond-landing-page -> A cosmic 3D landing page with React Three Fiber, crystal prisms, and ambient audio.
+```
+
+---
+
 ### $ monitor --stats
 
 <p align="left">
