@@ -23,9 +23,11 @@
 ### $ ls -la projects/
 
 ```bash
-total 2
+total 4
 -rw-r--r--  1 arshdeep  staff  124 Jun 23 12:00 bmw-showcase -> A motorsport showcase with an interactive 3D WebGL Configurator (Next.js + R3F + GSAP).
 -rw-r--r--  1 arshdeep  staff  118 Jun 23 12:00 beyond-landing-page -> A cosmic 3D landing page with React Three Fiber, crystal prisms, and ambient audio.
+-rw-r--r--  1 arshdeep  staff  135 Jun 23 12:00 portfolio-arshdeep-singh -> A retro terminal-style full-stack portfolio with built-in boot sequences, ASCII art, and interactive elements.
+-rw-r--r--  1 arshdeep  staff  142 Jun 23 12:00 incredible-website -> A premium corporate/SaaS web application showcasing high-end aesthetics, 3D interactive globes, and responsive sections.
 ```
 
 ---
